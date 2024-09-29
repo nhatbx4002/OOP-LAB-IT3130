@@ -1,0 +1,2 @@
+6.1: 
+- Nếu người dùng thực hiện thao tác Cancel thì chương trình sẽ in ra option là No
