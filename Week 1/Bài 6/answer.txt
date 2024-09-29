@@ -1,2 +1,17 @@
 6.1: 
 - Nếu người dùng thực hiện thao tác Cancel thì chương trình sẽ in ra option là No
+- Có thể tùy chỉnh như sau : 
+  public static void main(String[] args) {
+        JFrame frame = new JFrame();
+        String[] options = new String[2];
+        options[0] = "I do";
+        options[1] = "I don't";
+        int option = JOptionPane.showOptionDialog(frame.getContentPane(),
+        "Do you want to change to the first class ticker?", "Message", 0, 
+        JOptionPane.INFORMATION_MESSAGE, null, options, null);
+
+        JOptionPane.showMessageDialog(null,
+        "You've chosen: " + (option == JOptionPane.YES_OPTION ? "Yes" : "No"));
+
+        System.exit(option);
+    }
