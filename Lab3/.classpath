@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Lab02/Code/AimsProjects/src"/>
+	<classpathentry kind="src" path="Week 1/Bài 2"/>
+	<classpathentry kind="src" path="Week 1/Bài 6/6.1+6.2/src"/>
+	<classpathentry kind="src" path="Week 1/Bài 6/6.3/src"/>
+	<classpathentry kind="src" path="Week 1/Bài 6/6.4/src"/>
+	<classpathentry kind="src" path="Week 1/Bài 6/6.5/src"/>
+	<classpathentry kind="src" path="Week 1/Bài 6/6.6/src"/>
+	<classpathentry kind="output" path="Lab02/Code/AimsProjects/bin"/>
+</classpath>
