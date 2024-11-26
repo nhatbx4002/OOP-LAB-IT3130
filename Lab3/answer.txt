@@ -1,0 +1,3 @@
+Khi thực hiện swap(x, y), chương trình sẽ tạo ra 1 stack frame (SF) và push nó vào vùng nhớ stack và tiến hành tráo đổi giá trị của x,y trong SF. Tuy nhiên, khi ra khỏi phương thức swap thì SF swap được pop ra khỏi vùng nhớ stack, các biến a, b, temp đồng thời được giải phóng.
+
+>> do vậy sau khi thực hiện swap kết quả vẫn giữ nguyên
