@@ -1,3 +1,4 @@
+package hust.soict.dsai.lab1;
 import java.util.Scanner;
 
 public class Triangle {
