@@ -21,24 +21,10 @@ public class Cart {
 	}
 	
 	//overloading method with input array
-//	public void addDigitalVideoDisc(DigitalVideoDisc[] listDisc) {
-//		if(qtyOrdered + listDisc.length <  MAX_NUMBERS_ORDERED ) {
-//			for(DigitalVideoDisc disc : listDisc ) {
-//				itemsOrdered[qtyOrdered] = disc;
-//				qtyOrdered++;
-//			}
-//			System.out.println("List disc have been added.");
-//		}
-//		else {
-//			System.out.println("The cart is almost full");
-//		}
-//	}
-	
-	//overloading method with arbitrary number of arguments 
-	public void addDigitalVideoDisc(DigitalVideoDisc... disc ) {
-		if(qtyOrdered + disc.length < MAX_NUMBERS_ORDERED) {
-			for(DigitalVideoDisc d : disc) {
-				itemsOrdered[qtyOrdered] = d;
+	public void addDigitalVideoDisc(DigitalVideoDisc[] listDisc) {
+		if(qtyOrdered + listDisc.length <  MAX_NUMBERS_ORDERED ) {
+			for(DigitalVideoDisc disc : listDisc ) {
+				itemsOrdered[qtyOrdered] = disc;
 				qtyOrdered++;
 			}
 			System.out.println("List disc have been added.");
@@ -47,6 +33,20 @@ public class Cart {
 			System.out.println("The cart is almost full");
 		}
 	}
+	
+	//overloading method with arbitrary number of arguments 
+//	public void addDigitalVideoDisc(DigitalVideoDisc... disc ) {
+//		if(qtyOrdered + disc.length < MAX_NUMBERS_ORDERED) {
+//			for(DigitalVideoDisc d : disc) {
+//				itemsOrdered[qtyOrdered] = d;
+//				qtyOrdered++;
+//			}
+//			System.out.println("List disc have been added.");
+//		}
+//		else {
+//			System.out.println("The cart is almost full");
+//		}
+//	}
 	
 	//overloading method with 2 parameters 
 	public void addDigitalVideoDisc(DigitalVideoDisc dvd1,DigitalVideoDisc dvd2) {
