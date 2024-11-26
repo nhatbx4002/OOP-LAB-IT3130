@@ -1,7 +1,0 @@
-Câu hỏi : When should accessor methods be used?
-Trả lời :
-Các phương thức truy cập nên được sử dụng hạn chế và chỉ khi thực sự cần thiết, như khi cần kiểm soát việc truy cập dữ liệu nội bộ mà không làm lộ cấu trúc bên trong. Sử dụng chúng khi cần kiểm tra, chuyển đổi hoặc thực hiện logic cụ thể trước khi truy xuất hoặc thay đổi dữ liệu. Khi có thể, hãy thay thế bằng các phương thức phù hợp với ngữ cảnh để bảo toàn tính đóng gói và giúp mã dễ bảo trì hơn.
-
-Câu hỏi : If you create a constructor method to build a DVD by title then create a constructor method to build a DVD by category. Does JAVA allow you to do this?
-Trả lời :Java hoàn toàn cho phép người dùng tạo nhiều phương thức constructor cho cùng 1 class, miễn là chúng khác loại tham số truyền vào để giúp Java phân biệt 
-các phương thức. Đây còn được gọi là Constructor Overloading.
