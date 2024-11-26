@@ -44,7 +44,7 @@ public class DigitalVideoDisc {
 		this.cost = cost ; 
 	} 
 	// Add by director , category , title , float , cost 
-	public DigitalVideoDisc(String director, String category,String title ,int length , float cost) {
+	public DigitalVideoDisc(String title, String category,String director ,int length , float cost) {
 		super();
 		this.title = title;
 		this.director = director ; 
@@ -52,4 +52,16 @@ public class DigitalVideoDisc {
 		this.length = length;
 		this.cost = cost ; 
 	} 
+	
+	//function take information and return String
+	public String toString(){
+	        return "DVD - " + title + " - " + category + " - " + director + " - " + length + " min: " + cost + " $";
+    }
+	
+	//boolean isMatch return true if the corresponding disk is a match given the title
+	public boolean isMatch (String title) {
+		return this.title.equals(title);
+	}
+	
+	
 }

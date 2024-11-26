@@ -6,6 +6,9 @@ public class Cart {
 	
 	private int qtyOrdered = 0; 
 	
+	public int getQty () {
+		return qtyOrdered; 
+	}
 	
 	public void addDigitalVideoDisc(DigitalVideoDisc disc) {
 		if(qtyOrdered < MAX_NUMBERS_ORDERED) {
@@ -88,5 +91,14 @@ public class Cart {
 			System.out.println("Not found disc");
 		}
 	}
-			
+	//print cart 
+	public void printCart () {
+		float total = 0 ; 
+		System.out.println("***********************CART***********************");
+		for(int i = 0 ; i < qtyOrdered ; i++) {
+			System.out.println((i+1) + ". " + itemsOrdered[i].toString() );
+			total += itemsOrdered[i].getCost();
+		}
+		System.out.println("Total cost : " +  total);
+	}	
 }
