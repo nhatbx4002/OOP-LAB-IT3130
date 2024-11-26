@@ -52,7 +52,6 @@ public class DigitalVideoDisc {
 		this.length = length;
 		this.cost = cost ; 
 	} 
-	
 	//function take information and return String
 	public String toString(){
 	        return "DVD - " + title + " - " + category + " - " + director + " - " + length + " min: " + cost + " $";
@@ -62,6 +61,7 @@ public class DigitalVideoDisc {
 	public boolean isMatch (String title) {
 		return this.title.equals(title);
 	}
-	
-	
+	public void  setTitle (String title) {
+		this.title = title;
+	}
 }
