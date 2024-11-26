@@ -100,24 +100,5 @@ public class Cart {
 			total += itemsOrdered[i].getCost();
 		}
 		System.out.println("Total cost : " +  total);
-	}
-	
-	public void searchDVDInCart (String title ) {
-		for(int i = 0 ; i < qtyOrdered ; i++) {
-			if(itemsOrdered[i].isMatch(title)) {
-				System.out.println(itemsOrdered[i].toString());
-				return; 
-			}
-			System.out.println("Not found !");
-		}
-	}
-	
-	public void searchDVDInCart (int id) {
-		if(id < qtyOrdered && id > 0 ) {
-			System.out.println(itemsOrdered[id]);
-		}else {
-			System.out.print("Not found");
-		}
-	}
-	
+	}	
 }
