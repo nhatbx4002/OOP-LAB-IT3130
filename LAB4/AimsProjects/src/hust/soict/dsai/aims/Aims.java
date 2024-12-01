@@ -1,34 +1,31 @@
 package hust.soict.dsai.aims;
+import java.util.ArrayList;
+import java.util.List;
+
 import hust.soict.dsai.aims.cart.Cart;
-import hust.soict.dsai.aims.media.DigitalVideoDisc;
+import hust.soict.dsai.aims.media.*;
+
 
 public class Aims {
 
 	public static void main(String[] args) {
-		//Create new Cart ;
-		Cart anOrder = new Cart();
-		
-		//Create new DVDs object 
-		DigitalVideoDisc dvd1 = new DigitalVideoDisc("The Lion King","Animation","Roger Allers", 87 , 19.95f);
-		
-		
-		DigitalVideoDisc dvd2 = new DigitalVideoDisc("Star Wars","Science Fiction","George Lucas", 87 , 24.95f);
-		
-		
-		DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin","Animation",18.99f);
-		
-		anOrder.addMedia(dvd1);
-		anOrder.addMedia(dvd2);
-		anOrder.addMedia(dvd3);
-		//print total cost of the items in the cart 
-		System.out.print("Total Cost is : ");
-		System.out.println(anOrder.TotalCost());
-		
-		//test remove DVD from cart
-		System.out.print("Total Cost is : ");
-		System.out.println(anOrder.TotalCost());
-		
-	
+
+        ArrayList<Media> mediae = new ArrayList<>();
+
+
+        CompactDisc cd = new CompactDisc("Greatest Hits");
+        DigitalVideoDisc dvd = new DigitalVideoDisc("Inception");
+        Book book = new Book("To Kill a Mockingbird", "Harper Lee",1111);
+
+
+        mediae.add(cd);
+        mediae.add(dvd);
+        mediae.add(book);
+
+
+        for (Media m : mediae) {
+            System.out.println(m.toString());
+        }
 	}
 
 }

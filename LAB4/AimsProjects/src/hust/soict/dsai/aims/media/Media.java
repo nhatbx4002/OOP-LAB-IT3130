@@ -50,11 +50,11 @@ public abstract class Media {
 	}
 	
 	//toString 
-	public String toString() {
-        return   this.getTitle() +
-                " - Category: " + this.getCategory() +
-                " - Cost: " + this.getCost() + "$";
-    }
+	 public String toString() {
+	        return "Media: " + this.getTitle() +
+	                " - Category: " + this.getCategory() +
+	                " - Cost: " + this.getCost() + "$";
+	    }
 	
 	
 	public boolean isMatch (String title) {
