@@ -5,8 +5,16 @@ import java.util.List;
 
 
 public class Book extends Media{
-	
+
 	private List<String> authors = new ArrayList<>();
+	
+	//constructor
+	public Book(String title) {
+		super(title);
+	}
+	public Book(String title,String category , float cost) {
+		super(title,category,cost);
+	}
 	
 	public void addAuthors(String authorName) {
 		boolean check = false;

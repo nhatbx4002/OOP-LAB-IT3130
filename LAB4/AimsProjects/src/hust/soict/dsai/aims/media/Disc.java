@@ -14,26 +14,20 @@ public class Disc extends Media {
 	
 	//constructor 
 	public Disc (String title) {
-		this.title = title ; 
+		super(title);
 	}
 	
 	public Disc (String title, String category , float cost ) {
-		this.title = title ; 
-		this.category = category;
-		this.cost = cost ; 
+		super(title,category,cost);
 	}
 	
 	public Disc (String title , String category , String director  ,float cost ) {
-		this.title = title ; 
-		this.category = category;
-		this.cost = cost ; 
+		super(title,category,cost);
 		this.director = director ; 
 	}
 	
 	public Disc (String title , String category , String director , int length ,float cost ) {
-		this.title = title ; 
-		this.category = category;
-		this.cost = cost ; 
+		super(title,category,cost);
 		this.director = director ; 
 		this.length = length ; 
 	}

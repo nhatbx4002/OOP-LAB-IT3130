@@ -14,13 +14,13 @@ public class StoreTest {
 	        Store store = new Store();
 
 	        // Test adding DVDs
-	        store.addDVD(dvd1);
-	        store.addDVD(dvd2);
-	        store.addDVD(dvd3);
+	        store.addMedia(dvd1);
+	        store.addMedia(dvd2);
+	        store.addMedia(dvd3);
 
 	        // Test removing a DVD
-	        store.removeDVD("Star Wars");
-	        store.removeDVD("Frozen");
+	        store.removeMedia("Star Wars");
+	        store.removeMedia("Frozen");
 	}
 
 }
