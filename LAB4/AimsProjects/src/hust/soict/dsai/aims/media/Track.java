@@ -1,6 +1,6 @@
 package hust.soict.dsai.aims.media;
 
-public class Track {
+public class Track implements Playable {
 
 	private String title ; 
 	private int length ;
@@ -13,5 +13,11 @@ public class Track {
 		return length;
 	}
 	
+	
+	//play method
+	public void play() {
+		System.out.println("Playing DVD: " + this.getTitle());
+		System.out.println("DVD length: " + this.getLength());
+	}
 
 }
