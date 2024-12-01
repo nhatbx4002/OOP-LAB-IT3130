@@ -17,6 +17,7 @@ public class CartTest {
 
         //Test the print method
         cart.printCart();
-        cart.searchByTitle("The Lion King");
+        cart.sortMediaByTitle();
+        cart.printCart();
 	}
 }

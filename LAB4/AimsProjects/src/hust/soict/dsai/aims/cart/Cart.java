@@ -1,6 +1,7 @@
 package hust.soict.dsai.aims.cart;
 import hust.soict.dsai.aims.media.*;
-import java.util.*;
+import java.util.Collections;
+import java.util.ArrayList;
 public class Cart {
 	public static final int MAX_NUMBERS_ORDERED = 20 ; 
 	private ArrayList<Media> itemsOrdered = new ArrayList<Media>();
@@ -81,7 +82,15 @@ public class Cart {
 		System.out.println("Total cost : " +  TotalCost() + "$");
 	}
 	
+	public ArrayList<Media> sortMediaByCost () {
+		Collections.sort(itemsOrdered,Media.COMPARE_BY_COST_TITLE);
+		return itemsOrdered;
+	}
 	
+	public ArrayList<Media> sortMediaByTitle () {
+		Collections.sort(itemsOrdered,Media.COMPARE_BY_TITLE_COST);
+		return itemsOrdered;
+	}
 	
 	
 }
