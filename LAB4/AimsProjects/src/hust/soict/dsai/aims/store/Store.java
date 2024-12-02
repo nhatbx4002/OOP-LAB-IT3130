@@ -57,4 +57,11 @@ public class Store {
 	      System.out.println(title + "not found in store");
 	      return ;
 	    }
+	 
+	 public Media searchByTitle(String title) {
+		 for(Media media : items) {
+			 if(media.getTitle().equals(title)) return media;
+		 }
+		 return null;
+	 }
 }

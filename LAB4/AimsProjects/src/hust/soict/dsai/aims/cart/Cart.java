@@ -10,7 +10,7 @@ public class Cart {
 	public void addMedia (Media media) {
 		if( itemsOrdered.size() + 1  >= MAX_NUMBERS_ORDERED ) {
 			System.out.println("The cart is almost full !");
-			return;
+			return ;
 		}
 		if(!itemsOrdered.contains(media)){
 			itemsOrdered.add(media);
@@ -18,7 +18,6 @@ public class Cart {
 		}else{
 			System.out.println(media.getTitle() + " has already exist!");
 		}
-		
 		return ;
 	}
 	
@@ -35,6 +34,22 @@ public class Cart {
 		}
 	}
 	
+	public void removeMedia (String title) {
+		if(itemsOrdered.size() == 0 ) {
+			System.out.print("Nothing to remove !");
+			return ; 
+		}
+		for(Media it : itemsOrdered) {
+			if(it.getTitle().equals(title)) {
+				itemsOrdered.remove(it);
+				System.out.println(title + " has been removed.");
+				return ;
+			}
+		}
+		System.out.println("not found media!");
+		return;
+		
+	}
 	//overloading method add media 
 	public void addMedia (Media[] MediaList) {
 		if(itemsOrdered.size() + MediaList.length + 1 >= MAX_NUMBERS_ORDERED ) {
@@ -90,6 +105,12 @@ public class Cart {
 	public ArrayList<Media> sortMediaByTitle () {
 		Collections.sort(itemsOrdered,Media.COMPARE_BY_TITLE_COST);
 		return itemsOrdered;
+	}
+
+	public void clearCart() {
+		// TODO Auto-generated method stub
+		itemsOrdered.clear();
+		return;
 	}
 	
 	
