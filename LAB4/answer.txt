@@ -2,7 +2,9 @@ Question: Alternatively, to compare items in the cart, instead of using Comparat
 Suppose we are taking this Comparable interface approach.
 - Trả lời:
 Code:
-public int compareTo(MediaHbq other) {
+Trả lời : 
+Code : 
+public int compareTo(Media media) {
         // So sánh theo title
         int titleComparison = this.title.compareToIgnoreCase(other.title);
         if (titleComparison != 0) {
@@ -18,6 +20,5 @@ public int compareTo(MediaHbq other) {
         // Nếu title và category giống nhau, so sánh theo cost
         return Float.compare(this.cost, other.cost);
     }
-
 Cách triển khai này giúp chúng ta linh hoạt hơn khi so sánh các đối tượng Media và 
 cung cấp khả năng mở rộng cho các lớp con khác nếu cần thiết.
