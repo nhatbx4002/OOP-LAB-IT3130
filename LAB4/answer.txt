@@ -1,0 +1,23 @@
+Question: Alternatively, to compare items in the cart, instead of using Comparator, we can use the Comparable interface and override the compareTo()method. You can refer to the Java docs to see the information of this interface. 
+Suppose we are taking this Comparable interface approach.
+- Trả lời:
+Code:
+public int compareTo(MediaHbq other) {
+        // So sánh theo title
+        int titleComparison = this.title.compareToIgnoreCase(other.title);
+        if (titleComparison != 0) {
+            return titleComparison;
+        }
+
+        // Nếu title giống nhau, so sánh theo category
+        int categoryComparison = this.category.compareToIgnoreCase(other.category);
+        if (categoryComparison != 0) {
+            return categoryComparison;
+        }
+
+        // Nếu title và category giống nhau, so sánh theo cost
+        return Float.compare(this.cost, other.cost);
+    }
+
+Cách triển khai này giúp chúng ta linh hoạt hơn khi so sánh các đối tượng Media và 
+cung cấp khả năng mở rộng cho các lớp con khác nếu cần thiết.
