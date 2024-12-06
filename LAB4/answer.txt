@@ -1,8 +1,6 @@
 Question: Alternatively, to compare items in the cart, instead of using Comparator, we can use the Comparable interface and override the compareTo()method. You can refer to the Java docs to see the information of this interface. 
 Suppose we are taking this Comparable interface approach.
 - Trả lời:
-Code:
-Trả lời : 
 Code : 
 public int compareTo(Media media) {
         // So sánh theo title
